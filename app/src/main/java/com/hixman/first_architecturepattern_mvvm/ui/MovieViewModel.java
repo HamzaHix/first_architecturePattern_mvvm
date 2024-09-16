@@ -14,7 +14,7 @@ public class MovieViewModel extends ViewModel {
 //    LiveData<String> mvvm_name_LiveData;    // we don't need it yet
 
     // this is MutableLiveData ; it's give you the right to change it manually (with .set or .post)
-    MutableLiveData<String> movieNameMutableLiveData = new MutableLiveData<>();
+    public MutableLiveData<String> movieNameMutableLiveData = new MutableLiveData<>();
 
 
     private MovieModel getMovieFromDataBase(){
